@@ -1,0 +1,213 @@
+x`<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Padraig Lysandrou</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../favicon.ico" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="../index.html">Home</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">my projects</h1>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+      <!-- Work
+      ================================== -->
+      <div class="row work">
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>4kN Ethanol/LOX Rocket Propulsion System</h1>
+                  <p class="info">Personal Project<span>&bull;</span> Ithaca, NY <span>&bull;</span><em class="date">August '17</em></p>
+                  <p>Progress report: I fully switched to a 4kN engine design from a 20kN engine. I decided it might be more technically interesting to have the ability to build a GNC testbed (like Masten!) than an engine for suborbital flight. So far all the equations have been solved and I have a proper mechanical description. I am now working on the thermodynamics calcs and we'll see how they change the design. I'm shooting for a film cooled design as I would rather not have to deal with expensive and complicated machining that usually comes with regenerative systems. I will post updates as they come along.
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>Caltech Space Challenge</h1>
+                  <p class="info">Competition<span>&bull;</span> Pasadena, CA <span>&bull;</span><em class="date"> April '17 </em></p>
+                  <p> <a href="http://www.spacechallenge.caltech.edu/"> WE WON! </a> I had an absolutely incredible time at Caltech. The goal was design an architecture that would harvest Hydrogen and Oxygen from the regolith, and refuel craft in orbit aroung Earth to increase payload beyond the Earth-Moon system. Many hours spent crunching numbers, few spent sleeping! I met some pretty inspiring JPL folks. Both the tenured professors and JPL employees were always super excited to help us with whatever the task. Help ranged from orbital dynamics and rendezvous experts to Honeybee robotics end-effector engineers.<a href="http://www.spacechallenge.caltech.edu/s/Team-Explorer-Final-Report-CSC-2017.pdf"> Here is our final report. </a>
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>Eleventh Eye -- Make MIT Hackathon Entry</h1>
+                  <p class="info"> Cambridge, MA <span>&bull;</span><em class="date"> March '17 </em></p>
+                  <p>My team, consisting of a couple Cornell friends, won a prize! We went in with no plans and made two wearable devices to assist the visually impaired using computer vision and a conversational voice interface as well as LIDAR distance sensing, and came home with Amazon's sponsorship prize!
+                  <div style="text-align: center;"><img height="150" width="300" src="images/portfolio/hackMIT.jpg" ALT="image"></div>
+                  <div style="text-align: center;"><img height="150" width="300" src="images/portfolio/hackMITama.jpg" ALT="image"></div>
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>Cornell University Artifical Gravity Satellite</h1>
+                  <p class="info">Researh Project -- Avionics Lead<span>&bull;</span> Ithaca, NY <span>&bull;</span><em class="date">August '16 - Present</em></p>
+                  <p>I am developing the avionics system for a new small-satellite that will spin up in low Earth orbit to generate artificial gravity and demonstrate control of a tethered system. thermodynamicss technology is vital for long-term inhabitation of space.
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>Drone Flight Computer ~ For ECE3140</h1>
+                  <p class="info">Class project<span>&bull;</span> Ithaca, NY <span>&bull;</span><em class="date"> May '17 </em></p>
+                  <p>The goal was to design, build, and test a project using the class-selected embedded platform. My partned and I decided to take it to the next level. We wrote, integrated, and tested a drone flight computer. We programmed the MK64FN1M0 FRDM board to use timer interrupts to read incoming PWM from the 2.4GHz receiver, scale those values, then apply them as new setpoints to the PID rate controller. The PID controller used a I2C gyroscope for direct feedback (no time for fancy estimation methods unfortunately..) to stabilize the system. We implemented a brute force Nichols Ziegler tune. The output of the independant RPY rate controllers were summed up to create a PWM value that was distributed to the brushless electronic speed controllers.
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>Cornell Violet Nanosat</h1>
+                  <p class="info">Avionics Lead<span>&bull;</span> Ithaca, NY <span>&bull;</span><em class="date">August '14 - Present</em></p> 
+                  <p>
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+
+            
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>AgroDrone -- Random Hacks of Kindness</h1>
+                  <p class="info">Ithaca, NY <span>&bull;</span><em class="date"> October '16 </em></p>
+                  <p>
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>Akash Systems Satellite</h1>
+                  <p class="info">Ithaca, NY <span>&bull;</span><em class="date"> May '17 </em></p>
+                  <p>
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h1>Linear Accelerators</h1>
+                  <p class="info">Bloomington, IN <span>&bull;</span><em class="date"> 2011 - 2013</em></p>
+                  <p>
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+
+
+
+
+
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+         <div class="twelve columns">
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <ul class="copyright">
+               <li>Copyright CeeVee </li>
+               <li>Original page design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+            </ul>
+         </div>
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+</html>
