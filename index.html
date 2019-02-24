@@ -63,7 +63,7 @@
          <div class="row banner">
             <div class="banner-text">
                <h1 class="responsive-headline">I'm Pádraig Lysandrou.</h1>
-               <h3>I'm an aerospace engineering graduate student at The University of Colorado Boulder. I got my BS in ECE from Cornell Univerity in 2018. I spend most of my time programming <span>rockets and satellites</span> to fly.<br><a class="smoothscroll" href="#about">About me</a>.</h3>
+               <h3>I'm an aerospace engineering graduate student at The University of Colorado Boulder. I got my BS in ECE from Cornell Univerity in 2018. I spend most of my writing guidance and control algorithms for <span>rockets and satellites</span>. I also like designing, building, and programming electronics. <br><a class="smoothscroll" href="#about">About me</a>.</h3>
                <hr />
                <ul class="social">
                   <li><a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/"><i class="fa fa-linkedin"></i></a></li>
@@ -92,7 +92,7 @@
 
             <div class="nine columns main-col">
                <h2>About Me</h2>
-               <p> I grew up in Indiana building sugar rockets and hacking electronics. At Cornell I focused on designing, building, and testing avionics and GNC subsystems of multiple spacecraft. I've spent three summers at SpaceX and one at Blue Origin. I am now honing my skills in guidance and control theory in the Entry Systems Design Laboratory at the University of Colorado Boulder. It has been a wild ride in new-space.
+               <p> I grew up in Indiana building rockets and hacking electronics. At Cornell I focused on designing, building, and testing avionics and GNC subsystems of multiple spacecraft. I've spent three summers at SpaceX and one at Blue Origin. I am now honing my skills in guidance and control theory in the Entry Systems Design Laboratory at the University of Colorado Boulder under Dr. Robert Braun. It has been a wild ride in new-space!
                </p>
 
                <div class="row">
@@ -121,7 +121,7 @@
       </section> <!-- About Section End-->
 
 
-<!-- Portfolio Section
+<!-- Portfolio Section IMAGES TO BE 560X420 PIXELS!
 ================================================== -->
       <section id="portfolio">
          <div class="row">
@@ -272,8 +272,7 @@
                            <div class="link-icon"><i class="icon-plus"></i></div>
                         </a>
                      </div>
-                  </div>
-
+                  </div> <!-- item end -->
 
                   <!-- HackMIT -->
                   <div class="columns portfolio-item">
@@ -282,7 +281,7 @@
                            <img alt="" src="images/portfolio/hackMIT/hackMITlaptop.jpg">
                            <div class="overlay">
                               <div class="portfolio-item-meta">
-                                 <h5>hackMIT 2017</h5>
+                                 <h5> hackMIT 2017 </h5>
                                  <p>we won a thing!</p>
                               </div>
                            </div>
@@ -294,7 +293,7 @@
                   <!-- Caltech Space Challenge 2017 -->
                   <div class="columns portfolio-item">
                      <div class="item-wrap">
-                        <a href="#caltech" title="CSC">
+                        <a href="#caltech" title="caltech">
                            <img alt="" src="images/portfolio/csc/rana.JPG">
                            <div class="overlay">
                               <div class="portfolio-item-meta">
@@ -307,13 +306,69 @@
                      </div>
                   </div> <!-- item end -->
 
-
                   <!-- CuGrav -->
+                  <div class="columns portfolio-item">
+                     <div class="item-wrap">
+                        <a href="#cugrav" title="cugrav">
+                           <img alt="" src="images/portfolio/cug/cover.png">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5> Cornell University Artificial Gravity Cubesat</h5>
+                                 <p> A stable spinning 3U cubesat</p>
+                              </div>
+                           </div>
+                           <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+                     </div>
+                  </div> <!-- item end -->
+
                   <!-- Akash Space Systems -->
+                  <div class="columns portfolio-item">
+                     <div class="item-wrap">
+                        <a href="#akash" title="akash">
+                           <img alt="" src="images/portfolio/akash/cover.PNG">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5> Akash Systems 6U Satellite Study</h5>
+                                 <p> To support Akash System's Tb/s transmitters</p>
+                              </div>
+                           </div>
+                           <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+                     </div>
+                  </div> <!-- item end -->
+                  
                   <!-- Violet  -->
+                  <div class="columns portfolio-item">
+                     <div class="item-wrap">
+                        <a href="#violet" title="violet">
+                           <img alt="" src="images/portfolio/violet/cover.jpg">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5> Violet 55kg Nanosatellite</h5>
+                                 <p> Testing 8x CMG Attitude Control Algorithms</p>
+                              </div>
+                           </div>
+                           <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+                     </div>
+                  </div> <!-- item end -->
+
                   <!-- Select Older Projects: Linacs, Tesla coils, robot arms etc -->
-
-
+                  <div class="columns portfolio-item">
+                     <div class="item-wrap">
+                        <a href="#selectother" title="selectother">
+                           <img alt="" src="images/portfolio/other/cover.jpg">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5> Old Projects (Pre 2015)</h5>
+                                 <p> Before Cornell!</p>
+                              </div>
+                           </div>
+                           <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+                     </div>
+                  </div> <!-- item end -->
 
 
 
@@ -457,6 +512,24 @@
             </div>
 
             <!-- Caltech Space Challenge 2017 -->
+            <div id="caltech" class="popup-modal mfp-hide">
+               <img class="scale-with-grid" src="images/portfolio/csc/point.JPG" alt="" />
+               <div class="description-box">
+                  <h4>Caltech Space Challenge 2017</h4>
+                  <p> I had the wonderful opportunity of spending a week at Caltech/JPL on mission formulation for a lunar base. The goal was design an architecture that would harvest hydrogen and oxygen from the regolith, and refuel craft in orbit aroung Earth to increase payload beyond the Earth-Moon system. Many hours spent crunching numbers, few spent sleeping. Also my team won; we all got Microsoft surface pros! You can find the paper <a href="http://csc.caltech.edu/CSC2017/pdfs/team_explorer_final_report.pdf"> here.</a> You can also find a conference paper <a href=https://arc.aiaa.org/doi/pdf/10.2514/6.2017-5375"> here.</a>
+                  <img class="scale-with-grid" src="images/portfolio/csc/us.JPG" alt="" />
+                  I also got to meet astronaut and SpaceX VP Garret Reisman!
+
+                  <img class="scale-with-grid" src="images/portfolio/csc/reisman.JPG" alt="" />
+                  </p>
+               </div>
+               <div class="link-box">
+                  <a class="popup-modal-dismiss">Close</a>
+               </div>
+            </div>
+
+
+
             <!-- CuGrav -->
             <!-- Akash Space Systems -->
             <!-- Violet  -->
