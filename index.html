@@ -55,7 +55,7 @@
                <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
                <li><a class="smoothscroll" href="#about">About</a></li>
    	        <li><a class="smoothscroll" href="#resume">Resume</a></li>
-               <li><a class="smoothscroll" href="#portfolio">Work Examples</a></li>
+               <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
                <li><a href="https://www.notforflight.com">Project Blog</a></li>
             </ul> <!-- end #nav -->
 
@@ -63,12 +63,13 @@
          <div class="row banner">
             <div class="banner-text">
                <h1 class="responsive-headline">I'm Pádraig Lysandrou.</h1>
-               <h3>I'm an aerospace engineering graduate student at The University of Colorado Boulder. I got my BS in ECE from Cornell University in 2018. I spend most of my time writing guidance and control algorithms for <span>rockets and satellites</span>. I also like designing, building, and programming electronics. <br><a class="smoothscroll" href="#about">About me</a>.</h3>
+               <h3> I write guidance and control algorithms for <span>spacecraft</span>. But, I also enjoy tinkering with <span>electronics</span>. <br><a class="smoothscroll" href="#about">About me</a>.</h3>
                <hr />
                <ul class="social">
                   <li><a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="https://twitter.com/lysandrou_/"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="https://github.com/Lysandr"><i class="fa fa-github"></i></a></li>
+                  <li><a href="https://www.notforflight.com"><i class="fa fa-arrow-circle-right"></i></a></li>
                </ul>
             </div>
          </div>
@@ -87,21 +88,19 @@
          <div class="row">
 
             <div class="three columns">
-               <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+               <img class="profile-pic"  src="images/hackMITlaptop.jpg" alt="" />
             </div>
 
             <div class="nine columns main-col">
                <h2>About Me</h2>
-               <p> I grew up in Indiana building rockets and hacking electronics. At Cornell I focused on designing, building, and testing avionics and GNC subsystems of multiple spacecraft. I've spent four summers at SpaceX and one at Blue Origin. I am now honing my skills in guidance and control theory in the Entry Systems Design Laboratory at the University of Colorado Boulder under Dr. Robert Braun.
+               <p> I grew up in Indiana building rockets and hacking electronics. At Cornell University, I focused on designing, building, and the testing avionics and GNC subsystems of multiple spacecraft. I also ran the Cornell Maker Lab, an excellent resource for student prototype development. I was a PhD student at CU Boulder, where I got my master's degree in the Entry systems Design Lab under Robert D. Braun on developing algorithms for landing rockets.
                </p>
 
                <div class="row">
                   <div class="columns contact-details">
                      <h2>Contact Details</h2>
                      <p class="address">
-   						   <span>Padraig Lysandrou</span><br>
-   						   <span>Boulder, CO</span><br>
-                        <span> <a href="mailto:padraig.lysandrou@colorado.edu">padraig.lysandrou@colorado.edu</a></span>
+                        <span> <a href="mailto:psl58@cornell.edu">psl58@cornell.edu</a></span>
    					   </p>
 
                   </div>
@@ -126,7 +125,7 @@
       <section id="portfolio">
          <div class="row">
             <div class="twelve columns collapsed">
-               <h1><a href="https://www.notforflight.com">See more of my work on my blog!</a></h1>
+               <h1><a href="https://www.notforflight.com">goto blog</a></h1>
                <!-- portfolio-wrapper -->
                <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
 
@@ -585,7 +584,7 @@
                <img class="scale-with-grid" src="images/portfolio/ebrd/brd.JPG" alt="" />
                <div class="description-box">
                   <h4> Electric Longboard 2018 </h4>
-                  <p> I know. Too stereotypical. Anyways, this is a 4kW board with 18650s recycled from the hover-board days. I also designed and built the wireless controller from scratch, with the control mechanism a flexible resistor (flexistor?). I will be redesigning this because communication integrity is not quite the best.
+                  <p> I know. Very cliche. Anyways, this is a 4kW board with 18650s recycled from the hover-board days. I also designed and built the wireless controller from scratch, with the control mechanism a flexible resistor (flexistor?). I will be redesigning this because communication integrity is not quite the best.
                   <img class="scale-with-grid" src="images/portfolio/ebrd/ctrl.jpg" alt="" />
                   </p>
                </div>
@@ -599,7 +598,7 @@
                <img class="scale-with-grid" src="images/portfolio/quad/tethered.jpg" alt="" />
                <div class="description-box">
                   <h4> Quadrotor 2017 </h4>
-                  <p> Eric berg and I built a drone and wrote the flight software for my embedded systems course, ECE3140, as a final project. This was just a brute force PID controller; we did not consider dynamics and manually tuned the system.</p>
+                  <p> Eric Berg and I built a drone and wrote the flight software for my embedded systems course, ECE3140, as a final project. This was just a brute force PID controller; we did not consider dynamics and manually tuned the system.</p>
                </div>
                <div class="link-box">
                   <a class="popup-modal-dismiss">Close</a>
@@ -753,8 +752,8 @@
                <div class="row item">
                   <div class="twelve columns">
                      <h3>The University of Colorado Boulder </h3>
-                     <p class="info">MS and PhD in Aerospace Engineering <span>&bull;</span> <em class="date"> MS by Fall '19</em></p>
-                     <p> Working in the Entry systems Design Laboratory under Dr. Braun. I work primarily on optimal guidance and control methods.
+                     <p class="info">MS in Aerospace Engineering <span>&bull;</span> <em class="date"> MS by Fall '19</em></p>
+                     <p> Working in the Entry systems Design Laboratory under Dr. Braun. I worked on online optimization solutions to the powered descent guidance problem.
                      </p>
                   </div>
                </div> <!-- main-col end -->
@@ -779,6 +778,14 @@
             </div>
 
             <div class="nine columns main-col">
+
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h3>SpaceX</h3>
+                     <p class="info">GNC Engineer<span>&bull;</span> Hawthorne, CA <span>&bull;</span> <em class="date">February '20 -- Present</em></p>
+                     <p> Guidance and control algorithm development for a new satellite project flying in 2020 :)</p>
+                  </div>
+               </div> <!-- item end -->
 
                <div class="row item">
                   <div class="twelve columns">
