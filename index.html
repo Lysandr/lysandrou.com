@@ -1,893 +1,413 @@
-   <!DOCTYPE html>
-   <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-   <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-   <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-   <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pádraig Lysandrou</title>
+  <meta name="description" content="GNC Engineer — spacecraft guidance, control, and avionics.">
+  <meta name="author" content="Pádraig Lysandrou">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-      <!--- Basic Page Needs
-      ================================================== -->
-      <meta charset="utf-8">
-   	<title>Padraig Lysandrou</title>
-   	<meta name="description" content="">
-   	<meta name="author" content="Padraig Lysandrou">
+  <!-- Nav -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">PL</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="https://www.notforflight.com" target="_blank" rel="noopener">Blog&nbsp;↗</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-      <!-- Mobile Specific Metas
-      ================================================== -->
-   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <main>
 
-   	<!-- CSS
-       ================================================== -->
-      <link rel="stylesheet" href="css/default.css">
-   	<link rel="stylesheet" href="css/layout.css">
-      <link rel="stylesheet" href="css/media-queries.css">
-      <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-label">// ENGINEER</div>
+        <h1 class="hero-name">Pádraig<br>Lysandrou</h1>
+        <p class="hero-tagline"><span id="typewriter"></span><span class="cursor" aria-hidden="true">_</span></p>
+        <div class="hero-rule"></div>
+        <ul class="hero-socials">
+          <li>
+            <a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Lysandr" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/lysandrou_/" target="_blank" rel="noopener" aria-label="Twitter / X">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.notforflight.com" target="_blank" rel="noopener" aria-label="Blog">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to about">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
 
-      <!-- Script
-      ================================================== -->
-   	<script src="js/modernizr.js"></script>
-
-      <!-- Favicons
-   	================================================== -->
-   	<link rel="shortcut icon" href="favicon.ico" >
-
-      <!-- Global Site Tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81686080-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments)};
-         gtag('js', new Date());
-         gtag('config', 'UA-81686080-1');
-      </script>
-   </head>
-
-   <body>
-
-      <!-- Header
-      ================================================== -->
-      <header id="home">
-
-         <nav id="nav-wrap">
-
-            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-   	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-            <ul id="nav" class="nav">
-               <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-               <li><a class="smoothscroll" href="#about">About</a></li>
-   	        <li><a class="smoothscroll" href="#resume">Resume</a></li>
-               <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
-               <li><a href="https://www.notforflight.com">Project Blog</a></li>
-            </ul> <!-- end #nav -->
-
-         </nav> <!-- end #nav-wrap -->
-         <div class="row banner">
-            <div class="banner-text">
-               <h1 class="responsive-headline">I'm Pádraig Lysandrou.</h1>
-               <h3> I write guidance and control algorithms for <span>spacecraft</span>. But, I also enjoy tinkering with <span>electronics</span>. <br><a class="smoothscroll" href="#about">About me</a>.</h3>
-               <hr />
-               <ul class="social">
-                  <li><a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://twitter.com/lysandrou_/"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://github.com/Lysandr"><i class="fa fa-github"></i></a></li>
-                  <li><a href="https://www.notforflight.com"><i class="fa fa-arrow-circle-right"></i></a></li>
-               </ul>
+    <!-- About -->
+    <section id="about">
+      <div class="section-wrap">
+        <header class="section-header" data-animate>
+          <span class="section-label">// about</span>
+          <h2 class="section-title">About Me</h2>
+        </header>
+        <div class="about-grid" data-animate>
+          <div class="about-photo">
+            <img src="images/hackMITlaptop.jpg" alt="Pádraig Lysandrou">
+          </div>
+          <div class="about-text">
+            <p>I grew up in Indiana building rockets and hacking electronics. At Cornell University, I focused on designing, building, and testing avionics and GNC subsystems of multiple spacecraft. I also ran the Cornell Maker Lab — a hands-on resource for student prototype development.</p>
+            <p>I was a PhD student at CU Boulder, where I earned my master's degree in the Entry Systems Design Lab under Robert D. Braun, developing algorithms for powered descent guidance and rocket landing.</p>
+            <div class="about-actions">
+              <a href="mailto:padraig.lysandrou@gmail.com" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                padraig.lysandrou@gmail.com
+              </a>
+              <a href="Padraig_Lysandrou_resume.pdf" class="btn btn-primary" download>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Resume
+              </a>
             </div>
-         </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-         <p class="scrolldown">
-            <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-         </p>
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-wrap">
+        <header class="section-header" data-animate>
+          <span class="section-label">// projects</span>
+          <div class="section-header-row">
+            <h2 class="section-title">Work &amp; Projects</h2>
+            <a href="https://www.notforflight.com" target="_blank" rel="noopener" class="section-link">Project Blog ↗</a>
+          </div>
+        </header>
 
-      </header> <!-- Header End -->
+        <!-- Featured primary projects -->
+        <div class="project-primary" data-animate>
 
-
-      <!-- About Section
-      ================================================== -->
-      <section id="about">
-
-         <div class="row">
-
-            <div class="three columns">
-               <img class="profile-pic"  src="images/hackMITlaptop.jpg" alt="" />
+          <article class="project-card project-card--featured" data-project="kyrtos" tabindex="0" role="button" aria-label="kyrtos">
+            <div class="project-img">
+              <img src="images/portfolio/kyrtos/cover.svg" alt="kyrtos app" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-tags"><span class="tag">React</span><span class="tag">Supabase</span><span class="tag">Vercel</span><span class="tag">SaaS</span></div>
+              </div>
             </div>
-
-            <div class="nine columns main-col">
-               <h2>About Me</h2>
-               <p> I grew up in Indiana building rockets and hacking electronics. At Cornell University, I focused on designing, building, and the testing avionics and GNC subsystems of multiple spacecraft. I also ran the Cornell Maker Lab, an excellent resource for student prototype development. I was a PhD student at CU Boulder, where I got my master's degree in the Entry systems Design Lab under Robert D. Braun on developing algorithms for landing rockets.
-               </p>
-
-               <div class="row">
-                  <div class="columns contact-details">
-                     <h2>Contact Details</h2>
-                     <p class="address">
-                        <span> <a href="mailto:psl58@cornell.edu">psl58@cornell.edu</a></span>
-   					   </p>
-
-                  </div>
-
-                  <div class="columns download">
-                     <p>
-                        <a href="Padraig_Lysandrou_resume.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                     </p>
-                  </div>
-
-               </div> <!-- end row -->
-
-            </div> <!-- end .main-col -->
-
-         </div>
-
-      </section> <!-- About Section End-->
-
-
-<!-- Portfolio Section IMAGES TO BE 560X420 PIXELS!
-================================================== -->
-      <section id="portfolio">
-         <div class="row">
-            <div class="twelve columns collapsed">
-               <h1><a href="https://www.notforflight.com">goto blog</a></h1>
-               <!-- portfolio-wrapper -->
-               <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-                  <!-- PDP1 Progress-->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#lander" title="Powered Descent GNC Testbed">
-                           <img alt="" src="images/portfolio/lander/cover.JPG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Powered Descent GNC Testbed 2019</h5>
-                                 <p> Ongoing Project</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-                  
-                  <!-- minHash Algorithm-->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#minHash" title="Randomized Hashing Applied to Music Identification">
-                           <img alt="" src="images/portfolio/minHash/waterfall.JPG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>Locality Sensitive Randomized Hashing Applied to Music Identification 2019</h5>
-                                 <p> A final project for APPM5720</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- Successive Convex stuff-->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#succ" title="Rocket Landing Guidance - Successive Convexification">
-                           <img alt="" src="images/portfolio/succ/traj.png">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>Rocket Landing Guidance: Successive Convexification 2018</h5>
-                                 <p> I recreated a paper by Szmuk/Acikmese</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- Control Moment Gyroscope Work-->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#cmg" title="Momentum Exchange Device Framework">
-                           <img alt="" src="images/portfolio/cmg/consider.JPG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>RWA and CMG Sim Framework 2018</h5>
-                                 <p> ASEN6010</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- LR101 work -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#LR101" title="Restoring a Liquid Rocket Engine">
-                           <img alt="" src="images/portfolio/LR101/LR3.JPG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>Restoring a Liquid Rocket Engine 2018</h5>
-                                 <p>An LR101 from an Atlas Vehicle</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- LQG work -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#LQG" title="LQG">
-                           <img alt="" src="images/portfolio/LQG/LQR.png">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>LQG Control 2018</h5>
-                                 <p>A final project at Cornell</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- Convex Optimal Rocket Landing 2017 -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#cvx" title="cvx">
-                           <img alt="" src="images/portfolio/cvx1/3Dtraj.PNG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>Convex Optimal Rocket Landing 2017</h5>
-                                 <p> I recreated a paper by Blackmore/Acikmese/Ploen/Carson</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- Stewart Platform 2017 -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#stewie" title="stewie">
-                           <img alt="" src="images/portfolio/stewie/toppic.jpg">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Stewart Platform 2017 </h5>
-                                 <p> </p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- Keyboard Stuff -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#kbd" title="kbd">
-                           <img alt="" src="images/portfolio/kbd/cover.jpg">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> TeXboard 2018-19 </h5>
-                                 <p> </p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- ebrd stuff -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#ebrd" title="ebrd">
-                           <img alt="" src="images/portfolio/ebrd/brd.JPG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Electric Longboard 2018 </h5>
-                                 <p> (Ugh I know...) </p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- Quadrotor Stuff -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#quad" title="quad">
-                           <img alt="" src="images/portfolio/quad/overhead.jpg">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Quadrotor 2017 </h5>
-                                 <p> Classic </p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div>
-
-                  <!-- HackMIT 2018 -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#hackMIT18" title="hackMIT18">
-                           <img alt="" src="images/portfolio/hackMIT/arm.jpg">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> hackMIT 2018 </h5>
-                                 <p> we did another thing!</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-
-                  <!-- HackMIT -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#hackMIT" title="hackMIT">
-                           <img alt="" src="images/portfolio/hackMIT/hackMITlaptop.jpg">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> hackMIT 2017 </h5>
-                                 <p>we won a thing!</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-
-                  <!-- Caltech Space Challenge 2017 -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#caltech" title="caltech">
-                           <img alt="" src="images/portfolio/csc/rana.JPG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>Caltech Space Challenge 2017</h5>
-                                 <p>we won a thing!</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-
-                  <!-- CuGrav -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#cugrav" title="cugrav">
-                           <img alt="" src="images/portfolio/cug/cover.png">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Cornell University Artificial Gravity Cubesat</h5>
-                                 <p> A stable spinning 3U Cubesat</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-
-                  <!-- Akash Space Systems -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#akash" title="akash">
-                           <img alt="" src="images/portfolio/akash/cover.PNG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Akash Systems 6U Satellite Study</h5>
-                                 <p> To support Akash System's Tb/s transmitters</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-                  
-                  <!-- Violet  -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#violet" title="violet">
-                           <img alt="" src="images/portfolio/violet/side.PNG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Violet 55kg Nanosatellite</h5>
-                                 <p> Testing 8x CMG Attitude Control Algorithms</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-
-                  <!-- 5010  -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#5010" title="Mode Switching ADCS Sim 2019">
-                           <img alt="" src="images/portfolio/5010/main.JPG">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Mode Switching ADCS Sim</h5>
-                                 <p> Another assignment ...</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-
-                  <!-- Select Older Projects: Linacs, Tesla coils, robot arms etc -->
-                  <div class="columns portfolio-item">
-                     <div class="item-wrap">
-                        <a href="#selectother" title="selectother">
-                           <img alt="" src="images/portfolio/other/cover.jpg">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5> Old Projects (Pre 2015)</h5>
-                                 <p> Before Cornell!</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"></div>
-                        </a>
-                     </div>
-                  </div> <!-- item end -->
-
-
-
-               </div> <!-- portfolio-wrapper end -->
-            </div> <!-- twelve columns end -->
-
-<!-- ACTUAL ARTICLE CONTENT GOES HERE! -->
-
-            <!-- Lander Work -->
-            <div id="lander" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="" alt="" />
-               <div class="description-box">
-                  <h4>A Powered Descent Testbed for GNC Development</h4>
-                  <p> This is an on-going personal project. Expect updates soon.
-                  </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
+            <div class="project-meta">
+              <h3 class="project-title">kyrtos — Todo &amp; Notes App</h3>
+              <span class="project-year">2026</span>
             </div>
+          </article>
 
-
-            <!-- Minhash Work -->
-            <div id="minHash" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/minHash/block.JPG" alt="" />
-               <div class="description-box">
-                  <h4>Locality Sensitive Random Hashing for Music Identification</h4>
-                  <p> In early 2019, Sam Wishnek (Aerospace PhD Student at CU Boulder) and I implemented a Shazam system that utilizes a locality sensitive random hashing scheme for APPM5720: Randomized Algorithms, a course taught by Dr. Stephen Becker (check out his convex optimization research).
-                  </p>
-                  <p>   
-                  <a href="projects/minHash.pdf">You can find the paper/synopsis here</a>. We live-demonstrated this algorithm in class. It was able to pick up Darude Sandstorm under significant noise conditions.
-                  <img class="scale-with-grid" src="images/portfolio/minHash/alg.JPG" alt="" /></p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
+          <article class="project-card project-card--featured" data-project="lander" tabindex="0" role="button" aria-label="Powered Descent GNC Testbed">
+            <div class="project-img">
+              <img src="images/portfolio/lander/cover.JPG" alt="Powered Descent Testbed" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-tags"><span class="tag">GNC</span><span class="tag">Propulsion</span><span class="tag">Hardware</span></div>
+              </div>
             </div>
-
-            <!-- Successive Convex Work -->
-            <div id="succ" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/succ/traj.png" alt="" />
-               <div class="description-box">
-                  <h4>6DoF Successive Convex Optimal Powered Descent Guidance</h4>
-                  <p> I implemented the 2018 paper "Successive Convexification for 6-DoF Mars Rocket Powered Landing with Free-Final-Time" by Szmuk and Acikmese. This was predominantly as a final project for coursework at Boulder but also to get familiar with successive convexification framework for research.
-                  <a href="projects/scvx.pdf">You can find my paper/synopsis here</a>. I also added some cold gas control work at the end to learn how it works. I didn't have time to make it a proper cold gas bang-bang system; but maybe soon. <img class="scale-with-grid" src="images/portfolio/succ/alg.PNG" alt="" /></p>
-                  <p><img class="scale-with-grid" src="images/portfolio/succ/with_aero.png" alt="" /> I also presented similar work at IPPW 2019 at Oxford University, where I implemented the algorithm with slight modifications including MRP dynamics.</p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
+            <div class="project-meta">
+              <h3 class="project-title">MiniLander — Rocket Powered VTVL Testbed</h3>
+              <span class="project-year">2019 – Ongoing</span>
             </div>
+          </article>
+        </div>
 
-            <!-- CMG framework -->
-            <div id="cmg" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/cmg/eom.JPG" alt="" />
-               <div class="description-box">
-                  <h4>Reaction Wheel and Control Moment Gyroscope Attitude Control Simulation Framework</h4>
-                  <p> ASEN6010 taught by Dr. Hanspeter Schaub has a formative second assignment. It is to derive the equations of motion for N number of variable speed control moment gyroscopes (8 pages of math). This is the most general form of any momentum exchange device derivation: reaction wheels can also be derived with some simplifications on these. Then we were to build a complete attitude dynamics and control framework for infinitely many of these devices in any orientation or momentum configuration.
-                  </p><p>
-                  <a href="projects/cmg.pdf">You can find the assignment here</a>. I learned a lot from this assignment, and think it is worth sharing. <img class="scale-with-grid" src="images/portfolio/cmg/output.JPG" alt="" /></p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
+        <!-- Old projects dropdown -->
+        <div class="old-projects">
+          <button class="old-projects-btn" id="old-projects-btn" aria-expanded="false" aria-controls="old-projects-content">
+            <span class="old-projects-label">// old_projects</span>
+            <span class="old-projects-count">18 entries</span>
+            <svg class="old-projects-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="old-projects-wrap" id="old-projects-content" aria-hidden="true">
+            <div class="old-projects-inner">
+              <div class="projects-grid">
+
+                <article class="project-card" data-project="violet" tabindex="0" role="button" aria-label="Violet Nanosatellite">
+                  <div class="project-img"><img src="images/portfolio/violet/side.PNG" alt="Violet Nanosatellite" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Spacecraft</span><span class="tag">Avionics</span><span class="tag">ADCS</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Violet Nanosatellite</h3><span class="project-year">2014–2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="cugrav" tabindex="0" role="button" aria-label="CUGrav 3U Cubesat">
+                  <div class="project-img"><img src="images/portfolio/cug/cover.png" alt="CUGrav Cubesat" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Spacecraft</span><span class="tag">Avionics</span><span class="tag">ADCS</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">CUGrav 3U Cubesat</h3><span class="project-year">2016–2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="succ" tabindex="0" role="button" aria-label="Successive Convexification">
+                  <div class="project-img"><img src="images/portfolio/succ/traj.png" alt="Successive Convexification trajectory" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">GNC</span><span class="tag">Optimization</span><span class="tag">Software</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Successive Convexification Landing</h3><span class="project-year">2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="cvx" tabindex="0" role="button" aria-label="Convex Optimal Rocket Landing">
+                  <div class="project-img"><img src="images/portfolio/cvx1/3Dtraj.PNG" alt="Convex optimal trajectory" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">GNC</span><span class="tag">Optimization</span><span class="tag">Software</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Convex Optimal Rocket Landing</h3><span class="project-year">2017</span></div>
+                </article>
+
+                <article class="project-card" data-project="cmg" tabindex="0" role="button" aria-label="CMG Simulation Framework">
+                  <div class="project-img"><img src="images/portfolio/cmg/consider.JPG" alt="CMG framework" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">ADCS</span><span class="tag">Simulation</span><span class="tag">Software</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">RWA &amp; CMG Sim Framework</h3><span class="project-year">2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="5010" tabindex="0" role="button" aria-label="Mode Switching ADCS Sim">
+                  <div class="project-img"><img src="images/portfolio/5010/main.JPG" alt="Mode switching ADCS sim" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">ADCS</span><span class="tag">Control</span><span class="tag">Simulation</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Mode Switching ADCS Sim</h3><span class="project-year">2019</span></div>
+                </article>
+
+                <article class="project-card" data-project="LQG" tabindex="0" role="button" aria-label="LQG Control">
+                  <div class="project-img"><img src="images/portfolio/LQG/LQR.png" alt="LQG control" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Control</span><span class="tag">GNC</span><span class="tag">Software</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">LQG Control on Quadcopter</h3><span class="project-year">2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="akash" tabindex="0" role="button" aria-label="Akash Systems 6U Satellite">
+                  <div class="project-img"><img src="images/portfolio/akash/cover.PNG" alt="Akash 6U satellite" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Spacecraft</span><span class="tag">Avionics</span><span class="tag">Comms</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Akash Systems 6U Satellite</h3><span class="project-year">2017</span></div>
+                </article>
+
+                <article class="project-card" data-project="caltech" tabindex="0" role="button" aria-label="Caltech Space Challenge">
+                  <div class="project-img"><img src="images/portfolio/csc/rana.JPG" alt="Caltech Space Challenge" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Spacecraft</span><span class="tag">Mission Design</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Caltech Space Challenge</h3><span class="project-year">2017</span></div>
+                </article>
+
+                <article class="project-card" data-project="minHash" tabindex="0" role="button" aria-label="LSH Music Identification">
+                  <div class="project-img"><img src="images/portfolio/minHash/waterfall.JPG" alt="MinHash spectrogram" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Algorithms</span><span class="tag">Software</span><span class="tag">ML</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">LSH for Music Identification</h3><span class="project-year">2019</span></div>
+                </article>
+
+                <article class="project-card" data-project="LR101" tabindex="0" role="button" aria-label="LR101 Liquid Rocket Engine">
+                  <div class="project-img"><img src="images/portfolio/LR101/LR3.JPG" alt="LR101 engine" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Propulsion</span><span class="tag">Hardware</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">LR101 Liquid Rocket Engine</h3><span class="project-year">2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="stewie" tabindex="0" role="button" aria-label="Stewart Platform">
+                  <div class="project-img"><img src="images/portfolio/stewie/toppic.jpg" alt="Stewart Platform" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Hardware</span><span class="tag">Embedded</span><span class="tag">Control</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">3DOF Stewart Platform</h3><span class="project-year">2017</span></div>
+                </article>
+
+                <article class="project-card" data-project="kbd" tabindex="0" role="button" aria-label="TeXboard Keyboard">
+                  <div class="project-img"><img src="images/portfolio/kbd/cover.jpg" alt="TeXboard keyboard" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Hardware</span><span class="tag">Embedded</span><span class="tag">PCB</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">TeXboard MkI &amp; MkII</h3><span class="project-year">2018–2019</span></div>
+                </article>
+
+                <article class="project-card" data-project="quad" tabindex="0" role="button" aria-label="Quadrotor">
+                  <div class="project-img"><img src="images/portfolio/quad/overhead.jpg" alt="Quadrotor" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Hardware</span><span class="tag">GNC</span><span class="tag">Embedded</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Quadrotor</h3><span class="project-year">2017</span></div>
+                </article>
+
+                <article class="project-card" data-project="ebrd" tabindex="0" role="button" aria-label="Electric Longboard">
+                  <div class="project-img"><img src="images/portfolio/ebrd/brd.JPG" alt="Electric longboard" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Hardware</span><span class="tag">Embedded</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Electric Longboard</h3><span class="project-year">2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="hackMIT18" tabindex="0" role="button" aria-label="hackMIT 2018">
+                  <div class="project-img"><img src="images/portfolio/hackMIT/arm.jpg" alt="hackMIT 2018 BraceX" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Hackathon</span><span class="tag">Hardware</span><span class="tag">Robotics</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">hackMIT 2018 — BraceX</h3><span class="project-year">2018</span></div>
+                </article>
+
+                <article class="project-card" data-project="hackMIT" tabindex="0" role="button" aria-label="hackMIT 2017">
+                  <div class="project-img"><img src="images/portfolio/hackMIT/hackMITlaptop.jpg" alt="hackMIT 2017" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Hackathon</span><span class="tag">CV</span><span class="tag">Software</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">hackMIT 2017 — Amazon Prize</h3><span class="project-year">2017</span></div>
+                </article>
+
+                <article class="project-card" data-project="selectother" tabindex="0" role="button" aria-label="Pre-2015 Projects">
+                  <div class="project-img"><img src="images/portfolio/other/cover.jpg" alt="Pre-2015 projects" loading="lazy">
+                    <div class="project-overlay"><div class="project-tags"><span class="tag">Hardware</span><span class="tag">Electronics</span><span class="tag">Pre-2015</span></div></div></div>
+                  <div class="project-meta"><h3 class="project-title">Pre-2015 Projects</h3><span class="project-year">Before Cornell</span></div>
+                </article>
+
+              </div><!-- /.projects-grid -->
+            </div><!-- /.old-projects-inner -->
+          </div><!-- /.old-projects-wrap -->
+        </div><!-- /.old-projects -->
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <div class="section-wrap">
+        <header class="section-header" data-animate>
+          <span class="section-label">// resume</span>
+          <h2 class="section-title">Experience</h2>
+        </header>
+
+        <div class="resume-layout">
+
+          <div class="resume-col" data-animate>
+            <h3 class="resume-group">Education</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>University of Colorado Boulder</h4>
+                  <p class="timeline-meta">MS Aerospace Engineering <span>·</span> 2017–2019</p>
+                  <p>Entry Systems Design Laboratory under Dr. Robert D. Braun. Research on online optimization algorithms for powered descent guidance.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>Cornell University</h4>
+                  <p class="timeline-meta">BS Electrical &amp; Computer Engineering <span>·</span> May 2018</p>
+                  <p>Minors in Archaeology and Aerospace. Concentration in signals and control systems. Director, Cornell Maker Laboratory 2016–2018.</p>
+                </div>
+              </div>
+
             </div>
+          </div>
 
-            <!-- LR101 Work -->
-            <div id="LR101" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/LR101/LR1.JPG" alt="" />
-               <div class="description-box">
-                  <h4>LR101 Work</h4>
-                  <p> I built an apparatus consisting of a submersible pump, a bucket, and a 3D printed injector plate to continuously run vinegar and water through the regenerative channels for hours to clean it out. I then baked it to flush out the water. Still more work needs to be done; I may be using this for a rocket powered lander project. However, I may likely move to a lower thrust LOX/IPA engine of my own design.
-                  <img class="scale-with-grid" src="images/portfolio/LR101/LR2.JPG" alt="" />
-                  I also got a pressure sphere and some Marotta valves... We shall see where this project takes me.
-                  <img class="scale-with-grid" src="images/portfolio/LR101/parts.jpg" alt="" />
-                  </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
+          <div class="resume-col" data-animate>
+            <h3 class="resume-group">Work</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>SpaceX</h4>
+                  <p class="timeline-meta">GNC Engineer <span>·</span> Hawthorne, CA <span>·</span> Feb 2020 – Present</p>
+                  <p>Guidance and control algorithm development for next-generation satellite programs.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>SpaceX</h4>
+                  <p class="timeline-meta">Associate Engineer <span>·</span> Redmond, WA <span>·</span> Summer 2019</p>
+                  <p>Environmental test campaigns on V1.0 Starlink ADCS hardware, gimbal actuator control board design, and flight simulation framework development.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>SpaceX — Starlink ACS</h4>
+                  <p class="timeline-meta">Associate Engineer <span>·</span> Redmond, WA <span>·</span> Summer 2018</p>
+                  <p>Designed, built, and tested flight hardware and software for next-generation constellation star trackers. Wrote online debris filtering algorithms.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>Cornell Space Systems Design Studio</h4>
+                  <p class="timeline-meta">Avionics Lead <span>·</span> Ithaca, NY <span>·</span> Aug 2014 – May 2018</p>
+                  <p>Led avionics across Violet nanosatellite, CUGrav cubesat, and Akash Systems satellite. Six semesters bringing Violet to full functionality through PIRs and PSR with AFRL.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>Blue Origin</h4>
+                  <p class="timeline-meta">Avionics Hardware Intern <span>·</span> Kent, WA <span>·</span> Summer 2017</p>
+                  <p>Built and tested an RF link simulation tool for the New Shepard testbed.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>SpaceX — Dragon RF</h4>
+                  <p class="timeline-meta">Avionics Intern <span>·</span> Hawthorne, CA <span>·</span> Summer 2016</p>
+                  <p>TDRSS reradiation system for Dragon S-band testing. PDR/CDR with SpaceX and JPL Deep Space Network team.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>SpaceX — SLC-39A/40</h4>
+                  <p class="timeline-meta">Launch Intern <span>·</span> Cape Canaveral, FL <span>·</span> Summer 2015</p>
+                  <p>Instrumentation and range operations hardware for Falcon 9 and Falcon Heavy. Witnessed CRS-7 anomaly from one pad away.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>Ursa Space Systems</h4>
+                  <p class="timeline-meta">Systems Engineer <span>·</span> Ithaca, NY <span>·</span> Aug 2016 – Feb 2017</p>
+                  <p>First avionics design iteration for BearSAR, a synthetic aperture radar demonstration spacecraft.</p>
+                </div>
+              </div>
+
             </div>
+          </div>
 
-            <!-- LQG -->
-            <div id="LQG" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/LQG/LQGhelix_1.png" alt="" />
-               <div class="description-box">
-                  <h4>Linear Quadratic Gaussian Control on Quadcopter</h4>
-                  <p> This is a linear quadratic regulator with fixed gain matrix and an extended kalman filter. I wrote this as a final project for MAE6780 Multivariate Control. <a href="projects/lqg.pdf">You can find the paper here</a>. I tried to do some sophisticated guidance. But to be honest, it was just a copy of some CVX work I did previously.
-                  </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
+        </div><!-- /.resume-layout -->
+      </div>
+    </section>
 
-            <!-- CVX -->
-            <div id="cvx" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/cvx1/3Dtraj.PNG" alt="" />
-               <div class="description-box">
-                  <h4>Convex Optimal Rocket Landing Guidance</h4>
-                  <p> I implemented an algorithm from papers written by Blackmore, Acikmese, Ploen, and Carson. The single problem has a fixed final time, and an outer terminal time optimization loop is run to find the best parameter. I wrote this as a final project for ECE5555 Stochastic Control and Estimation. <a href="projects/cvx.pdf">You can find my paper here</a> </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
+  </main>
 
-            <!-- Stewie -->
-            <div id="stewie" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/stewie/rendersexysmall.jpg" alt="" />
-               <div class="description-box">
-                  <h4> 3DOF Stewart Platform 2017</h4>
-                  <p> Eric Berg, Adam Weld, and I built this 3DOF Stewart platform for Dr. Bruce Land's microcontroller course at Cornell University. I worked on the hardware and wrote most of the control software. <a href="https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2017/psl58_aw698_eb645/psl58_aw698_eb645/index.html">You can find a website detailing this project here</a> (it might take a bit to load).</p>
-                  Please <a href="mailto:padraig.lysandrou@colorado.edu">contact me</a> if you would like me to consult on a similar project. 
-                  <img class="scale-with-grid" src="images/portfolio/stewie/isometric.PNG" alt="" />
-                  This was a super fun project and I have gotten a lot of attention from it.
-                  <body>
-                     <iframe width="480" height="400" src="https://www.youtube.com/embed/05-RaxBwdmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </body>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
+  <footer>
+    <div class="footer-wrap">
+      <span class="footer-name">Pádraig Lysandrou</span>
+      <ul class="footer-socials">
+        <li><a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a></li>
+        <li><a href="https://github.com/Lysandr" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a></li>
+        <li><a href="https://twitter.com/lysandrou_/" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a></li>
+      </ul>
+      <span class="footer-copy">Built from scratch · 2026</span>
+    </div>
+  </footer>
 
-            <!-- KBD -->
-            <div id="kbd" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/kbd/dims_texbrd.PNG" alt="" />
-               <div class="description-box">
-                  <h4> TeXbrd MkI and MkII</h4>
-                  <p> The MkII keyboard is for sale, contact me for more information!</p>
-                  <p> Admittedly, it's a weird hobby. Check <a href="https://github.com/Lysandr/TeXboard">my github</a> for some Teensy microcontroller code that can accommodate many different layout matrices. My mkI hardware is a 60% layout with LaTeX bindings. MkII is done and pretty much better in every way. It is completely from scratch, with my own case design that is 3D printed in three parts that slot together.
-                  I also like making converters for vintage keyboards like the IBM4074 "Pingmaster"; more on <a href="https://www.notforflight.com">my blog.</a> </p>
-                  <p>
-                  This is a finished MkII board.
-                  <img class="scale-with-grid" src="images/portfolio/kbd/pic2.jpg" alt="" />
-                  I have made another for a customer.
-                  <img class="scale-with-grid" src="images/portfolio/kbd/pic3.jpg" alt="" />
-                  Here you see the MkI hardware with a MkII PCB in the background.
-                  <img class="scale-with-grid" src="images/portfolio/kbd/pic1.jpg" alt="" /> 
-                  </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <p class="modal-label" id="modal-year"></p>
+          <h2 class="modal-title" id="modal-title"></h2>
+          <div class="modal-tags" id="modal-tags"></div>
+        </div>
+        <button class="modal-close" id="modal-close" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
 
-            <!-- ebrd -->
-            <div id="ebrd" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/ebrd/brd.JPG" alt="" />
-               <div class="description-box">
-                  <h4> Electric Longboard 2018 </h4>
-                  <p> I know. Very cliche. Anyways, this is a 4kW board with 18650s recycled from the hover-board days. I also designed and built the wireless controller from scratch, with the control mechanism a flexible resistor (flexistor?). I will be redesigning this because communication integrity is not quite the best.
-                  <img class="scale-with-grid" src="images/portfolio/ebrd/ctrl.jpg" alt="" />
-                  </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-            <!-- quad -->
-            <div id="quad" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/quad/tethered.jpg" alt="" />
-               <div class="description-box">
-                  <h4> Quadrotor 2017 </h4>
-                  <p> Eric Berg and I built a drone and wrote the flight software for my embedded systems course, ECE3140, as a final project. This was just a brute force PID controller; we did not consider dynamics and manually tuned the system.</p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-            <!-- HACKMIT 2018 -->
-            <div id="hackMIT18" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/hackMIT/gallery.jpg" alt="" />
-               <div class="description-box">
-                  <h4>hackMIT BraceX - 2018</h4>
-                  <p>Eric Berg, Adam Weld, Katie Bradford, and I built a robotic-assisted exo-arm! However, we didn't win anything this year.<a href="https://devpost.com/software/bracex">Devpost.</a></p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-            <!-- HACKMIT 2017 -->
-            <div id="hackMIT" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/hackMIT/hackMITama.jpg" alt="" />
-               <div class="description-box">
-                  <h4>hackMIT 2017</h4>
-                  <p>Eric Berg, Adam Weld, and I won an award at hackMIT! We made a computer vision text-to-speech system that helps the vision impaired by telling them their surroundings, the distance to specific objects, and the describing the ambiance. We on the Amazon prize! This was actually an outstanding project and I would love to recreate it one day. <a href="https://devpost.com/software/third-eye-11th-finger">Devpost.</a> <img class="scale-with-grid" src="images/portfolio/hackMIT/11theye.jpg" alt="" /></p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-            <!-- Caltech Space Challenge 2017 -->
-            <div id="caltech" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/csc/point.JPG" alt="" />
-               <div class="description-box">
-                  <h4>Caltech Space Challenge 2017</h4>
-                  <p> I had the wonderful opportunity of spending a week at Caltech/JPL on mission formulation for a lunar base. The goal was design an architecture that would harvest hydrogen and oxygen from the regolith, and refuel craft in orbit around Earth to increase payload beyond the Earth-Moon system. Many hours spent crunching numbers, few spent sleeping. Also my team won; we all got Microsoft surface pros! <a href="http://csc.caltech.edu/CSC2017/pdfs/team_explorer_final_report.pdf">You can find the paper here.</a> You can also find a conference paper <a href=https://arc.aiaa.org/doi/pdf/10.2514/6.2017-5375"> here.</a>
-                  <img class="scale-with-grid" src="images/portfolio/csc/us.JPG" alt="" />
-                  I also got to meet astronaut and SpaceX VP Garret Reisman!
-
-                  <img class="scale-with-grid" src="images/portfolio/csc/reisman.JPG" alt="" />
-                  </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-            <!-- CuGrav -->
-            <div id="cugrav" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/cug/header.png" alt="" />
-               <div class="description-box">
-                  <h4>CUGrav 3U Cubesat</h4>
-                  <p> Cornell Artificial Gravity cubesat started as a Master's project. The goal of this spacecraft is to be the first platform to show stable control of artificial gravity with a nonrigid tether. I lead the avionics subsystem for a year where I performed a full-system in-house design. This means that my team and I recognized the requirements for, and designed the PCBs for the power system, flight computer, attitude determination and control, telemetry, and solar power. I also wrote the requirements and outlined the flight software components. The difficulty was in developing three independent avionics subsystems that had to speak to each other and green-light power budgets.</p>
-                  <p>
-                  Here you can see the exploded view with tether motors, avionics stack, solar cells, and Kane damper loops for energy dissipation.
-                     <img class="scale-with-grid" src="images/portfolio/cug/explode.JPG" alt="" /></p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-            <!-- Akash Space Systems -->
-            <div id="akash" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/akash/sat.PNG" alt="" />
-               <div class="description-box">
-                  <h4> Akash Systems 6U Satellite</h4>
-                  <p> This was done in conjunction with 5 other students <a href="projects/akash.pdf">and the paper can be found here.</a></p>
-                  <p>
-                  Here you can see a CAD view of the avionics stack which takes up approximately 2U, where the rest of the volume is for the high gain parabolic antenna.
-                     <img class="scale-with-grid" src="images/portfolio/akash/stack.JPG" alt="" /></p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-            <!-- Violet  -->
-            <div id="violet" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/violet/cover.jpg" alt="" />
-               <div class="description-box">
-                  <h4> Violet Nanosatellite ~55kg</h4>
-                  <p> I worked on the University Nanosat Program finalist-spacecraft Violet for roughly 2.5 years under the supervision of Dr Mason Peck. I worked across all subsystems from verifying the telemetry/command systems, to building ground stations, to ultimately leading the avionics team. Under this title, I worked on every PCB on the spacecraft, bringing them to full functionality and modifying hardware and firmware as necessary to accommodate de-scoping.
-                  </p>
-                  <p>
-                  I presented to the Air Force Research Laboratory for three Pre-Integration Reviews (PIRs) and 1 Pre-Ship Review (PSR). Ultimately, they chose to use their funding elsewhere and we ended up working with Ursa Space Systems as a bus for their payload. Again, it seems the plans have changed and Violet resides in Cornell's Sibley school of mechanical and aerospace engineering with Dr. Peck.
-                  </p>
-                  <p>
-                     Here I am operating on the flight computer:
-                     <img class="scale-with-grid" src="images/portfolio/violet/me.JPG" alt="" />
-                     <img class="scale-with-grid" src="images/portfolio/violet/patch.jpg" alt="" />
-                  </p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-
-            <!-- 5010 Work -->
-            <div id="5010" class="popup-modal mfp-hide">
-               <img class="scale-with-grid" src="images/portfolio/5010/overview.JPG" alt="" />
-               <div class="description-box">
-                  <h4>Mode Switching Attitude Control</h4>
-                  <p> This was a canned final project for Dr. Schaub's attitude control course, but it was cool and worth posting up here. <a href="projects/5010.pdf"> You can find my report here.</a> The control algorithm is Lyapunov derived nonlinear PD feedback law. Actuator physics is not modeled in this project, please see my other CMG/RWA simulation framework work.
-                  </p>
-                  <p>   
-                  <img class="scale-with-grid" src="images/portfolio/5010/plots.JPG" alt="" /></p>
-               </div>
-               <div class="link-box">
-                  <a class="popup-modal-dismiss">Close</a>
-               </div>
-            </div>
-
-
-            <!-- Select Older Projects: Linacs, Tesla coils, robot arms etc -->
-         </div> <!-- row End -->
-      </section> <!-- Portfolio Section End-->
-
-
-<!-- Class work portfolio  -->
-<!--       <section id="portfolio">
-         <div class="row">
-            <div class="twelve columns collapsed">
-               <h1>Course Work Portfolio</h1>
-               <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-
-
-               </div> 
-            </div>
-         </div> 
-      </section>  -->
-
-
-
-
-      <!-- Resume Section
-      ================================================== -->
-      <section id="resume">
-
-         <!-- Education
-         =============================================== -->
-         <div class="row education">
-
-            <div class="three columns header-col">
-               <h1><span>Education</span></h1>
-            </div>
-
-            <div class="nine columns main-col">
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>The University of Colorado Boulder </h3>
-                     <p class="info">MS in Aerospace Engineering <span>&bull;</span> <em class="date"> MS by Fall '19</em></p>
-                     <p> Working in the Entry systems Design Laboratory under Dr. Braun. I worked on online optimization solutions to the powered descent guidance problem.
-                     </p>
-                  </div>
-               </div> <!-- main-col end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>Cornell University </h3>
-                     <p class="info">BS in Electrical and Computer Engineering<span>&bull;</span> <em class="date">May 2018</em></p>
-                     <p> With minors in Archaeology and Aerospace. I have vectored my degree towards signals and control systems. I also ran the Cornell Maker Laboratory since 2016. I also did half of my MEng there.
-                     </p>
-                  </div>
-               </div> <!-- main-col end -->
-            </div> <!-- End Education -->
-
-
-         <!-- Work
-         ======================================================== -->
-         <div class="row work">
-
-            <div class="three columns header-col">
-               <h1><span>Work</span></h1>
-            </div>
-
-            <div class="nine columns main-col">
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>SpaceX</h3>
-                     <p class="info">GNC Engineer<span>&bull;</span> Hawthorne, CA <span>&bull;</span> <em class="date">February '20 -- Present</em></p>
-                     <p> Guidance and control algorithm development for a new satellite project flying in 2020 :)</p>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>SpaceX</h3>
-                     <p class="info">Associate Engineer<span>&bull;</span> Redmond, WA <span>&bull;</span> <em class="date">Summer '19</em></p>
-                     <p> I ran environmental test campaigns on V1.0 constellation attitude determination and control hardware, designed Starlink gateway gimbal actuator control boards, and worked on flight simulation framework.</p>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>SpaceX</h3>
-                     <p class="info">Associate Engineer - Starlink Attitude Control Systems<span>&bull;</span> Redmond, WA <span>&bull;</span> <em class="date">Summer '18</em></p>
-                     <p> Designed, built, and test flight hardware and software for star trackers on the next generation constellation. Wrote online star tracker debris filtering algorithms. And some other stuff.</p>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>Cornell University Space Systems Design Studio</h3>
-                     <p class="info">Avionics Lead<span>&bull;</span> Ithaca, NY <span>&bull;</span><em class="date">August '14 - May '18</em></p>
-                     <p> I led the avionics teams on the Violet Nanosatellite, Cornell Artificial Gravity Cubesat, and Akash Systems satellite. I spent 6 semesters bringing Violet's legacy COTS avionics system to full functionality and held pre-integration and pre-ship reviews with the Air Force Research Laboratory. I led the full-system avionics development of our artificial gravity 3U satellite from block-diagram to traces on boards. All boards were designed in-house. I spent one semester working on the budget-level COTS design of the 6U Akash Systems spacecraft meant to demonstrate communications transponders in the 100Gb/s to 1Tb/s range.
-                         <img class="scale-with-grid" src="images/portfolio/violet/mev.JPEG" alt="" />
-                     </p>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>Blue Origin</h3>
-                     <p class="info">Avionics Hardware Intern<span>&bull;</span> Kent, WA <span>&bull;</span> <em class="date">Summer '17</em></p>
-                     <p>I built and tested an RF link simulation tool for the New Shepard testbed. I can't talk about it!
-                     </p>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>SpaceX</h3>
-                     <p class="info">Avionics Intern - Dragon RF<span>&bull;</span> Hawthorne, CA <span>&bull;</span> <em class="date">Summer '16</em></p>
-                     <p>I worked on a TDRSS reradiation system for testing S-band communications on the Dragon vehicles. I developed other RF tools and performed post-mission analysis on Dragon RF subsystems. I held PDR and CDR level meetings with SpaceX and the Jet Propulsion Lab's Deep Space Network Team.
-                     </p>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>SpaceX</h3>
-                     <p class="info">Launch Intern - SLC39A/40<span>&bull;</span> Cape Canaveral, FL <span>&bull;</span> <em class="date">Summer '15</em></p>
-                     <p>I worked on the instrumentation and range operations hardware required to support the Falcon 9 and Heavy vehicles. During this summer I witnessed the unfortunate CRS7 anomaly from one pad away.
-                     </p>
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="row item">
-                  <div class="twelve columns">
-                     <h3>Ursa Space Systems</h3>
-                     <p class="info">Systems Engineer<span>&bull;</span> Ithaca, NY <span>&bull;</span> <em class="date">August '16 - February '17</em></p>
-                     <p>I worked on the first design iteration of avionics for a synthetic aperture radar demonstration spacecraft "BearSAR."
-                     </p>
-                  </div>
-               </div> <!-- item end -->
-            </div> <!-- main-col end -->
-         </div> <!-- End Work -->
-
-
-
-
-
-
-
-
-
-
-
-      <!-- footer -->
-      <footer>
-         <div class="row">
-            <div class="twelve columns">
-               <ul class="social-links">
-                  <li><a href="https://www.linkedin.com/in/p%C3%A1draig-lysandrou-734213a4/"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://twitter.com/lysandrou_/"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://github.com/Lysandr"><i class="fa fa-github"></i></a></li>
-               </ul>
-               <ul class="copyright">
-                  <li>A modified <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> design</li>
-               </ul>
-            </div>
-            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-         </div>
-      </footer>
-
-      <!-- Java script -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-      <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-      <script src="js/jquery.flexslider.js"></script>
-      <script src="js/waypoints.js"></script>
-      <script src="js/jquery.fittext.js"></script>
-      <script src="js/magnific-popup.js"></script>
-      <script src="js/init.js"></script>
-
-   </body>
-
-   </html>
+  <script src="js/main.js"></script>
+</body>
+</html>

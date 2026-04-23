@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,212,255,0.05)" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow-blue" cx="30%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#050810" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-purple" cx="75%" cy="65%" r="45%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#050810" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-sm">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#050810"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  <rect width="800" height="450" fill="url(#glow-blue)"/>
+  <rect width="800" height="450" fill="url(#glow-purple)"/>
+
+  <!-- Ambient particles -->
+  <circle cx="90"  cy="80"  r="1.5" fill="#00d4ff" opacity="0.6"/>
+  <circle cx="220" cy="40"  r="1"   fill="#7c3aed" opacity="0.7"/>
+  <circle cx="560" cy="55"  r="2"   fill="#00d4ff" opacity="0.4"/>
+  <circle cx="700" cy="120" r="1.5" fill="#00ff88" opacity="0.5"/>
+  <circle cx="740" cy="360" r="1"   fill="#00d4ff" opacity="0.5"/>
+  <circle cx="45"  cy="310" r="2"   fill="#7c3aed" opacity="0.4"/>
+  <circle cx="650" cy="400" r="1.5" fill="#00ff88" opacity="0.35"/>
+  <circle cx="380" cy="420" r="1"   fill="#00d4ff" opacity="0.4"/>
+
+  <!-- Glass panel: main list -->
+  <rect x="60" y="60" width="320" height="310" rx="6"
+        fill="rgba(255,255,255,0.04)" stroke="rgba(0,212,255,0.18)" stroke-width="1"/>
+
+  <!-- Panel header bar -->
+  <rect x="60" y="60" width="320" height="44" rx="6" fill="rgba(0,212,255,0.06)"/>
+  <rect x="60" y="84" width="320" height="20" fill="rgba(0,212,255,0.06)"/>
+
+  <!-- Panel title -->
+  <text x="82" y="88" font-family="'Space Mono', monospace" font-size="13" fill="#00d4ff" opacity="0.9">tasks</text>
+
+  <!-- Window dots -->
+  <circle cx="344" cy="82" r="4" fill="rgba(0,212,255,0.25)"/>
+  <circle cx="358" cy="82" r="4" fill="rgba(124,58,237,0.3)"/>
+
+  <!-- Todo items -->
+  <rect x="82" y="120" width="14" height="14" rx="2" fill="none" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+  <text x="104" y="132" font-family="'Space Mono', monospace" font-size="11" fill="rgba(200,220,240,0.75)">guidance sim integration</text>
+
+  <rect x="82" y="150" width="14" height="14" rx="2" fill="rgba(0,212,255,0.15)" stroke="rgba(0,212,255,0.5)" stroke-width="1.5"/>
+  <polyline points="85,157 88,161 94,154" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="104" y="162" font-family="'Space Mono', monospace" font-size="11" fill="rgba(200,220,240,0.35)" text-decoration="line-through">supabase auth</text>
+
+  <rect x="82" y="180" width="14" height="14" rx="2" fill="none" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+  <text x="104" y="192" font-family="'Space Mono', monospace" font-size="11" fill="rgba(200,220,240,0.75)">stripe integration</text>
+
+  <rect x="82" y="210" width="14" height="14" rx="2" fill="none" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+  <text x="104" y="222" font-family="'Space Mono', monospace" font-size="11" fill="rgba(200,220,240,0.75)">claude AI features</text>
+
+  <rect x="82" y="240" width="14" height="14" rx="2" fill="rgba(0,212,255,0.15)" stroke="rgba(0,212,255,0.5)" stroke-width="1.5"/>
+  <polyline points="85,247 88,251 94,244" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="104" y="252" font-family="'Space Mono', monospace" font-size="11" fill="rgba(200,220,240,0.35)" text-decoration="line-through">vercel deploy</text>
+
+  <!-- Glass panel: second list (offset) -->
+  <rect x="230" y="100" width="260" height="240" rx="6"
+        fill="rgba(255,255,255,0.03)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <rect x="230" y="100" width="260" height="44" rx="6" fill="rgba(124,58,237,0.06)"/>
+  <rect x="230" y="124" width="260" height="20" fill="rgba(124,58,237,0.06)"/>
+  <text x="252" y="128" font-family="'Space Mono', monospace" font-size="13" fill="#7c3aed" opacity="0.9">notes</text>
+
+  <rect x="250" y="160" width="220" height="60" rx="4" fill="rgba(255,255,255,0.03)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+  <text x="262" y="180" font-family="'Space Mono', monospace" font-size="10" fill="rgba(200,220,240,0.55)">kyrtos roadmap</text>
+  <text x="262" y="196" font-family="'Space Mono', monospace" font-size="9" fill="rgba(200,220,240,0.3)">phase 2: stripe · phase 3: AI</text>
+  <text x="262" y="210" font-family="'Space Mono', monospace" font-size="9" fill="rgba(200,220,240,0.3)">background modes...</text>
+
+  <!-- Bottom status bar hint -->
+  <rect x="230" y="300" width="260" height="28" rx="4" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.1)" stroke-width="1"/>
+  <circle cx="248" cy="314" r="3" fill="#00ff88" opacity="0.8"/>
+  <text x="258" y="319" font-family="'Space Mono', monospace" font-size="9" fill="rgba(200,220,240,0.4)">3 lists · 12 items · auto-saved</text>
+
+  <!-- kyrtos logotype -->
+  <text x="530" y="230" font-family="'Space Mono', monospace" font-weight="700" font-size="52"
+        fill="none" stroke="rgba(0,212,255,0.12)" stroke-width="1.5" letter-spacing="-2">kyrtos</text>
+  <text x="530" y="230" font-family="'Space Mono', monospace" font-weight="700" font-size="52"
+        fill="rgba(0,212,255,0.18)" letter-spacing="-2">kyrtos</text>
+
+  <text x="530" y="256" font-family="'Space Mono', monospace" font-size="10"
+        fill="rgba(0,212,255,0.45)" letter-spacing="0.15em">kyrtos.io</text>
+
+  <!-- Tag chips -->
+  <rect x="530" y="275" width="56" height="18" rx="2" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+  <text x="543" y="288" font-family="'Space Mono', monospace" font-size="8" fill="#00d4ff" letter-spacing="0.05em">React</text>
+
+  <rect x="594" y="275" width="68" height="18" rx="2" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="605" y="288" font-family="'Space Mono', monospace" font-size="8" fill="#7c3aed" letter-spacing="0.05em">Supabase</text>
+
+  <rect x="530" y="300" width="56" height="18" rx="2" fill="rgba(0,255,136,0.06)" stroke="rgba(0,255,136,0.18)" stroke-width="1"/>
+  <text x="541" y="313" font-family="'Space Mono', monospace" font-size="8" fill="#00ff88" letter-spacing="0.05em">Vercel</text>
+</svg>
