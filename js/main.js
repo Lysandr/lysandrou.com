@@ -462,3 +462,44 @@ modalBg.addEventListener('click', closeModal);
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
 });
+
+/* Email eigenvalue challenge
+------------------------------------------------------------ */
+(function () {
+  const ANSWER = 5;
+  const _e = ['padraig.lysandrou', '\x40', 'gmail.com'];
+
+  const challenge = document.getElementById('email-challenge');
+  const link      = document.getElementById('email-link');
+  const input     = document.getElementById('eigen-input');
+  const btn       = document.getElementById('eigen-btn');
+  const hint      = document.getElementById('eigen-hint');
+
+  function reveal() {
+    const email = _e.join('');
+    link.href = 'mailto:' + email;
+    document.getElementById('email-display').textContent = email;
+    link.style.display = 'inline-flex';
+    challenge.style.display = 'none';
+  }
+
+  function check() {
+    const raw = input.value.trim();
+    if (!raw) return;
+    const val = parseInt(raw, 10);
+    if (val === ANSWER) {
+      reveal();
+    } else if (val === 2) {
+      hint.textContent = 'that one has multiplicity 2';
+      input.value = '';
+      input.focus();
+    } else {
+      hint.textContent = val < ANSWER ? 'too small' : 'too large';
+      input.value = '';
+      input.focus();
+    }
+  }
+
+  btn.addEventListener('click', check);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+}());

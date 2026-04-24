@@ -78,12 +78,36 @@
             <img src="images/hackMITlaptop.jpg" alt="Pádraig Lysandrou">
           </div>
           <div class="about-text">
-            <p>I grew up in Indiana building rockets and hacking electronics. At Cornell University, I focused on designing, building, and testing avionics and GNC subsystems of multiple spacecraft. I also ran the Cornell Maker Lab — a hands-on resource for student prototype development.</p>
-            <p>I was a PhD student at CU Boulder, where I earned my master's degree in the Entry Systems Design Lab under Robert D. Braun, developing algorithms for powered descent guidance and rocket landing.</p>
+            <p>I grew up in Indiana building rockets and hacking electronics. At Cornell University, I focused on designing, building, and testing avionics and GNC subsystems of multiple spacecraft. I also ran the Cornell Maker Lab — a hands-on resource for student prototype development. I was a PhD student at CU Boulder, where I earned my master's degree in the Entry Systems Design Lab under Robert D. Braun, developing algorithms for powered descent guidance and rocket landing.</p>
+            <p> Currently, I am a Guidance, Navigation, and Control Engineer at SpaceX, working on the Starship and Lunar Starship programs. I'm also building a rocket powered lander in my garage.</p>
             <div class="about-actions">
-              <a href="mailto:padraig.lysandrou@gmail.com" class="btn btn-outline">
+              <div id="email-challenge" class="email-challenge">
+                <div class="challenge-header">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                  <span>find the unique eigenvalue to contact</span>
+                </div>
+                <div class="challenge-body">
+                  <div class="challenge-matrix-row">
+                    <span class="matrix-name">A =</span>
+                    <div class="matrix-display matrix-3x3">
+                      <span>2</span><span>0</span><span>0</span>
+                      <span>0</span><span>2</span><span>0</span>
+                      <span>0</span><span>0</span><span>5</span>
+                    </div>
+                  </div>
+                  <div class="challenge-right">
+                    <div class="challenge-answer-row">
+                      <span class="challenge-lambda">λ =</span>
+                      <input type="number" id="eigen-input" class="challenge-input" placeholder="?" autocomplete="off">
+                      <button class="challenge-btn btn btn-outline" id="eigen-btn">→</button>
+                    </div>
+                    <span id="eigen-hint" class="challenge-hint" aria-live="polite"></span>
+                  </div>
+                </div>
+              </div>
+              <a id="email-link" class="btn btn-outline" style="display:none">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                padraig.lysandrou@gmail.com
+                <span id="email-display"></span>
               </a>
               <a href="Padraig_Lysandrou_resume.pdf" class="btn btn-primary" download>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -99,9 +123,9 @@
     <section id="projects">
       <div class="section-wrap">
         <header class="section-header" data-animate>
-          <span class="section-label">// projects</span>
+          <span class="section-label">// hacking</span>
           <div class="section-header-row">
-            <h2 class="section-title">Work &amp; Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <a href="https://www.notforflight.com" target="_blank" rel="noopener" class="section-link">Project Blog ↗</a>
           </div>
         </header>

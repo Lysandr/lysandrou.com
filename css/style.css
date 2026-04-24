@@ -10,16 +10,16 @@
   --bg-2:        #0c1118;
   --bg-3:        #111d2a;
   --surface:     #0d1420;
-  --accent:      #00d4ff;
-  --accent-2:    #7b2fff;
-  --accent-dim:  rgba(0, 212, 255, 0.08);
-  --accent-glow: rgba(0, 212, 255, 0.18);
-  --text:        #8ca8be;
-  --text-dim:    #3d5266;
-  --text-bright: #d8eeff;
-  --border:      rgba(0, 212, 255, 0.1);
-  --border-2:    rgba(0, 212, 255, 0.28);
-  --glow:        0 0 28px rgba(0, 212, 255, 0.14), 0 4px 24px rgba(0, 0, 0, 0.5);
+  --accent:      #7c3aed;
+  --accent-2:    #00d4ff;
+  --accent-dim:  rgba(124, 58, 237, 0.08);
+  --accent-glow: rgba(124, 58, 237, 0.18);
+  --text:        #a898c8;
+  --text-dim:    #4a3d66;
+  --text-bright: #e8d8ff;
+  --border:      rgba(124, 58, 237, 0.12);
+  --border-2:    rgba(124, 58, 237, 0.32);
+  --glow:        0 0 28px rgba(124, 58, 237, 0.18), 0 4px 24px rgba(0, 0, 0, 0.5);
   --font-mono:   'Space Mono', 'Courier New', monospace;
   --font-sans:   'Inter', system-ui, -apple-system, sans-serif;
   --nav-h:       60px;
@@ -389,6 +389,7 @@ section {
 
 .about-actions {
   display: flex;
+  align-items: flex-start;
   gap: 0.75rem;
   flex-wrap: wrap;
   margin-top: 1.75rem;
@@ -1029,4 +1030,127 @@ footer {
 
   .modal-body { padding: 1.25rem; }
   .modal-header { padding: 1.25rem 1.25rem 1rem; }
+}
+
+/* Email eigenvalue challenge
+------------------------------------------------------------ */
+.email-challenge {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-family: var(--font-mono);
+}
+
+.challenge-header {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-dim);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.challenge-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.challenge-matrix-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.challenge-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.matrix-name {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.matrix-display {
+  display: inline-grid;
+  gap: 3px 10px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: var(--text-bright);
+  position: relative;
+}
+
+.matrix-3x3 { grid-template-columns: repeat(3, 1.2ch); }
+
+.matrix-display::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  border: 1.5px solid var(--text-dim);
+  border-right: none;
+}
+
+.matrix-display::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 5px;
+  border: 1.5px solid var(--text-dim);
+  border-left: none;
+}
+
+.challenge-answer-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0;
+}
+
+.challenge-lambda {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.challenge-input {
+  width: 3rem;
+  background: var(--bg);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  color: var(--text-bright);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.28rem 0.4rem;
+  text-align: center;
+  outline: none;
+  -moz-appearance: textfield;
+}
+
+.challenge-input::-webkit-outer-spin-button,
+.challenge-input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+.challenge-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-dim);
+}
+
+.challenge-btn {
+  padding: 0.28rem 0.55rem;
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.challenge-hint {
+  font-size: 0.63rem;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  min-height: 0.85rem;
 }
