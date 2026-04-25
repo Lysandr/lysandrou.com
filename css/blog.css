@@ -1,0 +1,237 @@
+/* ============================================================
+   Blog / Notes — prose & math styles
+   Loaded alongside style.css on all blog pages
+   ============================================================ */
+
+/* Blog index listing
+------------------------------------------------------------ */
+.blog-list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.blog-post-link {
+  display: block;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+.blog-post-link:first-child { border-top: 1px solid var(--border); }
+.blog-post-link:hover { opacity: 0.8; }
+.blog-post-link:hover .post-title { color: var(--accent); }
+
+.post-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.post-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
+.post-tag {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid var(--border);
+  padding: 2px 7px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.post-title {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-bright);
+  margin: 0 0 6px;
+  transition: color 0.2s;
+}
+.post-excerpt {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Article prose
+------------------------------------------------------------ */
+.article-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 0 80px;
+}
+
+.article-header {
+  padding: 48px 0 36px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 44px;
+}
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  margin-bottom: 28px;
+  transition: color 0.2s;
+}
+.article-back:hover { color: var(--accent); }
+.article-back svg { flex-shrink: 0; }
+
+.article-title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 500;
+  color: var(--text-bright);
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
+.article-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Prose body
+------------------------------------------------------------ */
+.article-body {
+  font-family: var(--font-sans);
+  font-size: 0.97rem;
+  line-height: 1.78;
+  color: var(--text);
+}
+
+.article-body h2 {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 52px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.article-body h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-bright);
+  margin: 36px 0 12px;
+}
+.article-body p {
+  margin: 0 0 20px;
+}
+.article-body strong {
+  color: var(--text-bright);
+  font-weight: 500;
+}
+.article-body a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-2);
+  transition: border-color 0.2s;
+}
+.article-body a:hover { border-color: var(--accent); }
+
+/* Block math */
+.article-body .math-block {
+  overflow-x: auto;
+  margin: 24px 0;
+  padding: 20px 24px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
+/* Inline math */
+.article-body .katex {
+  font-size: 1em;
+}
+
+/* Code */
+.article-body code {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  background: var(--bg-3);
+  color: var(--accent);
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+.article-body pre {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border-2);
+  border-radius: 4px;
+  padding: 20px 22px;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+.article-body pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+/* Callout boxes */
+.callout {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.callout-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Definition / theorem boxes */
+.def-box {
+  background: var(--surface);
+  border: 1px solid var(--border-2);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin: 28px 0;
+}
+.def-box-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .article-header { padding: 32px 0 24px; }
+  .article-body h2 { margin-top: 40px; }
+}
