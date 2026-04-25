@@ -31,6 +31,19 @@ const PROJECTS = {
       <p>Updates forthcoming.</p>
     `
   },
+
+  nexus: {
+    title: 'Nexus — Lander Ground Software',
+    year: '2025 – Ongoing',
+    tags: ['Python', 'React', 'Ground Software', 'Telemetry'],
+    body: `
+      <img src="images/portfolio/nexus/cover.svg" alt="Nexus telemetry dashboard">
+      <h3>Nexus — Real-Time Lander Telemetry Dashboard</h3>
+      <p>Ground software for the MiniLander testbed. A Python Flask backend ingests binary UDP telemetry packets from the flight software at 10 Hz, parses a custom blackboard format, and streams live data to a React frontend over WebSocket.</p>
+      <p><strong style="color: var(--text-bright)">Features:</strong> real-time telemetry table with search, time-series charts for key signals (altitude, velocity, throttle command), 3D scatter plots for vector quantities (attitude, acceleration), ring-buffer snapshot replay so the frontend can catch up on connect, REST API for programmatic access, and JSON telemetry logging to disk.</p>
+      <p><strong style="color: var(--text-bright)">Stack:</strong> Python 3 · Flask · Flask-SocketIO · React 18 · Recharts.</p>
+    `
+  },
   minHash: {
     title: 'LSH for Music Identification',
     year: '2019',

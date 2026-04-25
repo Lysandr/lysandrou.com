@@ -843,7 +843,7 @@ footer {
 ------------------------------------------------------------ */
 .project-primary {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -866,6 +866,12 @@ footer {
 
 .project-card--featured .project-img {
   aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 860px) {
+  .project-primary {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
